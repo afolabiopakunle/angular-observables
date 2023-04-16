@@ -14,15 +14,15 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.interval$ =  interval(1000).subscribe(value => {
-      this.value++
-      console.log(this.value)
-    })
+    // this.interval$ =  interval(1000).subscribe(value => {
+    //   this.value++
+    //   console.log(this.value)
+    // })
    }
  
    ngOnDestroy() {
-     this.interval$.unsubscribe()
-     console.log('destroyed')
+    //  this.interval$.unsubscribe()
+    //  console.log('destroyed')
    }
 
 }
